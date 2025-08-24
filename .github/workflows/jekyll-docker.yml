@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ta Mini Prop Firm – Challenge 100$ pour 10$</title>
+  <meta name="description" content="Commence avec 10$ et trade un compte de 100$. Règles simples, paiement rapide, support réactif." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
+    .container-tight { max-width: 1100px; }
+    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+    .card { border-radius: 1.25rem; }
+    .badge { font-size: .75rem; padding: .25rem .5rem; border-radius: 999px; }
+    .faq-item[open] summary svg { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-40 bg-white/90 glass border-b border-slate-200">
+    <div class="mx-auto container-tight px-4 py-3 flex items-center justify-between">
+      <a href="#accueil" class="flex items-center gap-2 font-extrabold text-slate-900 tracking-tight">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-sky-500 text-white">PF</span>
+        <span>Mini Prop Firm</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#offre" class="hover:text-indigo-600">Offre</a>
+        <a href="#regles" class="hover:text-indigo-600">Règles</a>
+        <a href="#process" class="hover:text-indigo-600">Process</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+        <a href="#inscription" class="hover:text-indigo-600">S'inscrire</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="menu" class="p-2 rounded-xl border border-slate-200 hover:bg-slate-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#offre" class="py-2">Offre</a>
+        <a href="#regles" class="py-2">Règles</a>
+        <a href="#process" class="py-2">Process</a>
+        <a href="#faq" class="py-2">FAQ</a>
+        <a href="#inscription" class="py-2">S'inscrire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-indigo-50 via-sky-50 to-slate-50"></div>
+    <div class="relative mx-auto container-tight px-4 pt-16 pb-10">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="badge bg-indigo-100 text-indigo-700">Nouveau</span>
+          <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+            Commence avec <span class="text-indigo-600">10&nbsp;$</span> et trade un compte de <span class="text-indigo-600">100&nbsp;$</span>
+          </h1>
+          <p class="mt-4 text-slate-600 text-lg">Challenge simple, règles claires, paiements rapides. Idéal pour tester ta discipline sans gros capital.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#offre" class="inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow-soft hover:bg-indigo-700">
+              Voir l'offre
+            </a>
+            <a href="#regles" class="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 font-semibold border border-slate-200 hover:bg-slate-100">
+              Règles de trading
+            </a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Paiement sécurisé
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Support réactif
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="relative rounded-3xl p-1 bg-gradient-to-br from-indigo-500/30 via-sky-400/30 to-teal-300/30">
+            <div class="card bg-white p-6 shadow-soft">
+              <div class="flex items-center justify-between">
+                <div class="text-sm text-slate-500">Solde virtuel</div>
+                <div class="badge bg-sky-100 text-sky-700">Challenge</div>
+              </div>
+              <div class="mt-2 text-4xl font-black tracking-tight">$100</div>
+              <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-slate-500">Drawdown max</div>
+                  <div class="font-bold">$10 (10%)</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-slate-500">Objectif profit</div>
+                  <div class="font-bold">$10 (+10%)</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-slate-500">DD quotidien</div>
+                  <div class="font-bold">5% / jour</div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                  <div class="text-slate-500">Profit split</div>
+                  <div class="font-bold">70% / 30%</div>
+                </div>
+              </div>
+              <a href="#offre" class="mt-6 inline-flex justify-center w-full rounded-2xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow-soft hover:bg-indigo-700">Démarrer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offre / Pricing -->
+  <section id="offre" class="py-16">
+    <div class="mx-auto container-tight px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">L'offre</h2>
+        <p class="mt-3 text-slate-600">Un seul niveau, transparent et abordable.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="card bg-white border border-slate-200 p-6 shadow-soft md:col-start-2">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold">Challenge 100&nbsp;$</h3>
+            <span class="badge bg-emerald-100 text-emerald-700">Le plus populaire</span>
+          </div>
+          <p class="mt-1 text-slate-600 text-sm">Idéal pour tester ta stratégie avec des règles strictes et simples.</p>
+          <div class="mt-6 flex items-baseline gap-2">
+            <div class="text-4xl font-extrabold">10&nbsp;$</div>
+            <div class="text-slate-500">frais d'entrée unique</div>
+          </div>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Solde de challenge : <strong>$100</strong></li>
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Objectif de profit : <strong>+10%</strong></li>
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Drawdown max : <strong>10%</strong> (daily 5%)</li>
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Jours minimum de trading : <strong>5</strong></li>
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Profit split : <strong>70% pour le trader</strong></li>
+            <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Plateformes : MT4 / MT5</li>
+          </ul>
+          <a id="buyLink" href="#" target="_blank" rel="noopener" class="mt-6 inline-flex justify-center w-full rounded-2xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow-soft hover:bg-indigo-700">Acheter le challenge</a>
+          <p class="mt-3 text-xs text-slate-500">⚠️ Aucun remboursement après achat du challenge. Lis les règles avant de payer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Règles -->
+  <section id="regles" class="py-16 bg-white">
+    <div class="mx-auto container-tight px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Règles de trading</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <ul class="card bg-slate-50 border border-slate-200 p-6 space-y-3">
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Taille de lot max : <strong>0.01</strong> (Forex) / risque max <strong>1%</strong> par trade</li>
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Levier max : <strong>1:50</strong></li>
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Pas de hedging, pas de martingale, pas d'EA haute fréquence</li>
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Positions ouvertes durant news à haut impact : <strong>interdit</strong> (NFP, CPI, FOMC…)</li>
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Trading sur indices/crypto : <strong>autorisé</strong> si conditions broker ok</li>
+          <li class="flex gap-2"><span class="text-green-600">✔</span> Temps minimum : <strong>5 jours</strong>, pas de max</li>
+        </ul>
+        <div class="card bg-white border border-slate-200 p-6">
+          <h3 class="font-bold text-lg">Conditions de réussite</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="text-indigo-600">•</span> Atteindre <strong>+10%</strong> de profit</li>
+            <li class="flex gap-2"><span class="text-indigo-600">•</span> Ne jamais dépasser <strong>10% de drawdown</strong> (5% quotidien)</li>
+            <li class="flex gap-2"><span class="text-indigo-600">•</span> Respecter les règles ci-dessus</li>
+          </ul>
+          <h3 class="mt-6 font-bold text-lg">Après validation</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex gap-2"><span class="text-emerald-600">•</span> Passage en <strong>compte financé 100$</strong></li>
+            <li class="flex gap-2"><span class="text-emerald-600">•</span> Paiements <strong>hebdo ou mensuels</strong> (au choix)</li>
+            <li class="flex gap-2"><span class="text-emerald-600">•</span> Profit split <strong>70% / 30%</strong></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Note : les règles peuvent évoluer. En payant, tu acceptes les CGU et la politique de risque.</p>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-16">
+    <div class="mx-auto container-tight px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-center">Comment ça marche ?</h2>
+      <div class="mt-10 grid md:grid-cols-4 gap-6">
+        <div class="card bg-white border border-slate-200 p-6">
+          <div class="badge bg-slate-100 text-slate-700">Étape 1</div>
+          <h3 class="mt-2 font-bold">Achète le challenge</h3>
+          <p class="text-sm text-slate-600 mt-1">Règle les 10$ via lien sécurisé (Stripe/PayPal).</p>
+        </div>
+        <div class="card bg-white border border-slate-200 p-6">
+          <div class="badge bg-slate-100 text-slate-700">Étape 2</div>
+          <h3 class="mt-2 font-bold">Reçois tes identifiants</h3>
+          <p class="text-sm text-slate-600 mt-1">Tu reçois login/MDP MT4/MT5 par email sous 24h (jours ouvrés).</p>
+        </div>
+        <div class="card bg-white border border-slate-200 p-6">
+          <div class="badge bg-slate-100 text-slate-700">Étape 3</div>
+          <h3 class="mt-2 font-bold">Trade le challenge</h3>
+          <p class="text-sm text-slate-600 mt-1">Respecte drawdown, objectif et règles de risque.</p>
+        </div>
+        <div class="card bg-white border border-slate-200 p-6">
+          <div class="badge bg-slate-100 text-slate-700">Étape 4</div>
+          <h3 class="mt-2 font-bold">Retire tes profits</h3>
+          <p class="text-sm text-slate-600 mt-1">Après validation, passe en compte financé et retire ton profit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="mx-auto container-tight px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">FAQ</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="faq-item card bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold">Est-ce un compte réel ?<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p class="mt-3 text-sm text-slate-600">Le challenge se fait sur un compte d'évaluation. Après réussite, tu reçois un compte financé 100$.</p>
+        </details>
+        <details class="faq-item card bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold">Quel broker utilisez-vous ?<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p class="mt-3 text-sm text-slate-600">Nous travaillons avec un broker partenaire compatible MT4/MT5. Les identifiants te sont envoyés après paiement.</p>
+        </details>
+        <details class="faq-item card bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold">Remboursements ?<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p class="mt-3 text-sm text-slate-600">Pas de remboursement après achat. Vérifie bien les règles avant de procéder.</p>
+        </details>
+        <details class="faq-item card bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold">Quand sont payés les profits ?<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></summary>
+          <p class="mt-3 text-sm text-slate-600">Hebdomadaire ou mensuel, selon ton choix, après vérification du respect des règles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inscription / Contact -->
+  <section id="inscription" class="py-16">
+    <div class="mx-auto container-tight px-4">
+      <div class="grid md:grid-cols-5 gap-6 items-start">
+        <div class="md:col-span-3">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">S'inscrire</h2>
+          <p class="mt-3 text-slate-600">Prêt à commencer ? Achète le challenge, puis envoie-nous un message avec ta preuve de paiement.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a id="buyLink2" href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow-soft hover:bg-indigo-700">Acheter le challenge (10$)</a>
+            <a id="whatsappBtn" href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 font-semibold border border-slate-200 hover:bg-slate-100">WhatsApp</a>
+            <a id="emailBtn" href="#" class="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 font-semibold border border-slate-200 hover:bg-slate-100">Email</a>
+          </div>
+        </div>
+        <div class="md:col-span-2 card bg-white border border-slate-200 p-6">
+          <h3 class="font-bold">Infos rapides</h3>
+          <dl class="mt-3 text-sm text-slate-700 space-y-2">
+            <div class="flex justify-between"><dt>Profit split</dt><dd class="font-semibold">70% / 30%</dd></div>
+            <div class="flex justify-between"><dt>Plateformes</dt><dd class="font-semibold">MT4 / MT5</dd></div>
+            <div class="flex justify-between"><dt>Support</dt><dd class="font-semibold">Lun–Ven</dd></div>
+            <div class="flex justify-between"><dt>Delai d'envoi</dt><dd class="font-semibold">&lt; 24h ouvrées</dd></div>
+          </dl>
+          <p class="mt-4 text-xs text-slate-500">Astuce : ajoute ton ID MT4/MT5 et ton email dans le message pour accélérer la vérification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 bg-white">
+    <div class="mx-auto container-tight px-4 text-sm text-slate-600">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          © <span id="year"></span> Mini Prop Firm. Tous droits réservés.
+          <span class="block md:inline text-xs text-slate-500">Trading à risque : ne trade jamais de l'argent que tu ne peux pas te permettre de perdre.</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" id="cguLink" class="hover:text-indigo-600">CGU</a>
+          <a href="#" id="mentionsLink" class="hover:text-indigo-600">Mentions légales</a>
+          <a href="#" id="privacyLink" class="hover:text-indigo-600">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ====== CONFIG À PERSONNALISER (TODO) ======
+    const CONFIG = {
+      brandName: 'Mini Prop Firm',
+      paymentLink: '#', // TODO: remplace par ton lien Stripe/PayPal
+      whatsapp: 'https://wa.me/0000000000', // TODO: ton lien WhatsApp international
+      email: 'mailto:contact@ton-domaine.com?subject=Preuve%20de%20paiement%20challenge%2010$&body=Bonjour,%20je%20viens%20d\'acheter%20le%20challenge.%20Voici%20ma%20preuve%20de%20paiement%20: ',
+      cguUrl: '#', // TODO: lien vers ton PDF/URL des CGU
+      mentionsUrl: '#', // TODO
+      privacyUrl: '#', // TODO
+    };
+
+    // Navbar mobile toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Inject dynamic links
+    const buyLinkEls = [document.getElementById('buyLink'), document.getElementById('buyLink2')];
+    buyLinkEls.forEach(el => el && (el.href = CONFIG.paymentLink));
+    const wa = document.getElementById('whatsappBtn');
+    const em = document.getElementById('emailBtn');
+    if (wa) wa.href = CONFIG.whatsapp;
+    if (em) em.href = CONFIG.email;
+
+    // Footer links
+    document.getElementById('cguLink').href = CONFIG.cguUrl;
+    document.getElementById('mentionsLink').href = CONFIG.mentionsUrl;
+    document.getElementById('privacyLink').href = CONFIG.privacyUrl;
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
